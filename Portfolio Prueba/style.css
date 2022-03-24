@@ -1,0 +1,19 @@
+
+nav a {
+    color: pink;
+}
+
+article a {
+    color:black;
+}
+
+footer a {
+    color:black;
+}
+
+img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+

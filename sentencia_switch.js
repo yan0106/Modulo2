@@ -59,3 +59,5 @@ function seleccionarIdioma(valor) {
 }
 console.log(seleccionarIdioma(1));
 
+/* Sentencia Switch múltiples casos: */
+

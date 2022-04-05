@@ -25,12 +25,34 @@ console.log(document.forms); // nos devuelve los formularios que tenga el docume
 
 console.log(document.styleSheets); // accedemos a las hojas de estilo enlazadas en el documento. 
 
-console.log(document.scripts); // 
+console.log(document.scripts); // trae los script que tengamos en el html.
 
 setTimeout(()=> {
-    console.log(document.getSelection().toString()) // cuando seleccionamos algo en una página también lo podemos mapear.
+    console.log(document.getSelection().toString()); // cuando seleccionamos algo en una página también lo podemos mapear.
 },3000);
 
 document.write("<h2>Hola Mundo desde el DOM</h2>"); // podemos escibir texto en el documento, desde Javascript, aunque no es una buena práctica.
+
+// Métodos:
+
+console.log(document.getElementsByTagName("li")); // capturamos ementos HTML por nombre de etiqueta. nos trae una colección de los mismos.
+console.log(document.getElementsByClassName("cara")); //capturamos elementos HTML por nombre de clase.
+console.log(document.getElementsByName("nombre")); // nos permite acceder a través del atributo name, por ejemplo en los
+//formularios usamos ese atributo name. El lenguaje del lado del servidor lo interpreta como una variable de tipo post o de tipo get.
+console.log(document.getElementById("menu")); // para buscar elementos ID
+
+/* */
+console.log(document.querySelector("#menu")); // "consulta de selector", esto remplazó a los 3 primeros getElements.
+// Recibe como parámetro un selector válido de css, un ID, una clase. Acá si hay que especificar el . o el #
+// Solamente va a traer el primer tipo de selector que le hayamos especificado.
+// Devuelve una NodeList, no una colección. Es un tipo diferente de dato.
+console.log(documet.querySelectorAll("#menu")); // trae todos los selectores del tipo que le hayamos indicado.
+// Devuelve una NodeList, no una colección
+// Con los arreglos comparten la propiedad .length , .forEach:
+document.querySelectorAll("a").forEach((el)=>console.log(el));
+
+
+
+
 
 

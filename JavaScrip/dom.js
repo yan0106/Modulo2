@@ -50,8 +50,8 @@ console.log(documet.querySelectorAll("#menu")); // trae todos los selectores del
 // Devuelve una NodeList, no una colección
 // Con los arreglos comparten la propiedad .length , .forEach:
 document.querySelectorAll("a").forEach((el)=>console.log(el));
-
-
+// como es un conjunto de elementos, si yo quiero acceder a un elemento en particular, puedo utilizar [2], como en los arreglos.
+// Me trae el elemento de ese índice.
 
 
 

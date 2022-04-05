@@ -1,0 +1,12 @@
+{
+    "cadena": "jon",
+    "numero": "35",
+    "booleano": "true",
+    "arreglo": ["correr", "programar", "cocinar"],
+    "objeto": {
+        "twitter": "@yanndiaz_",
+        "email": "yandiradiaz@hotmail.com"
+    },
+    "nulo": null
+}
+
